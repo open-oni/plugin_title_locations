@@ -29,6 +29,8 @@ def get_titles_by_location():
 
         for place in places:
             loc = place.get_city_county
+            # Must be str object rather than unicode object for `key=str.lower`
+            loc = loc.encode('utf-8')
             if loc not in locations:
                 locations[loc] = []
             locations[loc].append(title)
