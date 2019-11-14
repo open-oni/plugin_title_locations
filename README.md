@@ -8,6 +8,21 @@ has been broken.
 The output is pure text and should suffice as an alternative to the map plugin
 for people who prefer (or need) something text-based.
 
+Compatibility
+---
+
+The "master" branch should not be considered stable.  Unlike the core Open ONI
+repository, plugins don't warrant the extra overhead of having separate
+development branches, release branches, etc.  Instead, it is best to find a tag
+that works and stick with that tag.
+
+- Titles By Location v0.1.1 and prior only work with Python 2 and Django 1.11
+  and prior
+  - Therefore these versions of the Titles By Location plugin are only
+    compatible up to (and including) ONI v0.11.0
+- Titles By Location releases beyond v0.1.1 require Python 3 and Django 2.2.
+  If you need this plugin to work with ONI v0.11.0 or prior, stick with v0.1.1.
+
 Setup
 ---
 
