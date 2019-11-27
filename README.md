@@ -19,9 +19,9 @@ that works and stick with that tag.
 - Titles By Location v0.1.1 and prior only work with Python 2 and Django 1.11
   and prior
   - Therefore these versions of the Titles By Location plugin are only
-    compatible up to (and including) ONI v0.11.0
-- Titles By Location releases beyond v0.1.1 require Python 3 and Django 2.2.
-  If you need this plugin to work with ONI v0.11.0 or prior, stick with v0.1.1.
+    compatible up to (and including) ONI v0.11
+- Titles By Location releases v0.2.0 and later require Python 3 and Django 2.2,
+  and should be used with ONI 0.12 and later.
 
 Setup
 ---
