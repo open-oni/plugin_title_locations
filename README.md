@@ -49,14 +49,14 @@ Put in a new URL path into `onisite/urls.py` (or your theme's `urls.py`) above
 the `core.urls` line:
 
 ```python
-from django.conf.urls import url, include
+from django.urls import include, path, re_path
 from onisite.plugins.title_locations import views as tl_views
 
 urlpatterns = [
-  url(r'^titles_by_location$', tl_views.titles_by_location, name="oregon_titles_by_location"),
+  re_path(r'^titles_by_location$', tl_views.titles_by_location, name="oregon_titles_by_location"),
 
   # make sure you include your titles_by_location link above the core urls
-  url('', include("core.urls")),
+  path('', include("core.urls")),
 ```
 
 API
